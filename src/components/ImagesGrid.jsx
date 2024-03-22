@@ -10,17 +10,17 @@ import F8 from "../assets/drive/F8.png";
 
 const ImagesGrid = () => {
   return (
-    <div>
-       <div className="flex">
-             <div className="mt-5">Prepare with ease</div>
-              <div className="grid grid-cols-4 gap-4 w-1/2 mt-10    ">
+    <div  className=''>
+       <div className="flex overflow-y-hidden ">
+             
+              <div className="grid grid-cols-4 gap-6 w-[50%]  mb-20 mt-4 ml-16">
                 <div>
                   <img
                     style={{ maxWidth: "100%", height: "auto" }}
                     src={F1}
                     alt="Image 1"
                   />
-                  <h1>Speaking</h1>
+                  <h1 className='ml-2'>Speaking</h1>
                 </div>
 
                 <div>
@@ -29,7 +29,7 @@ const ImagesGrid = () => {
                     src={F2}
                     alt="Image 2"
                   />
-                  <h1>Writing</h1>
+                  <h1 className='ml-2'>Writing</h1>
                 </div>
 
                 <div>
@@ -38,7 +38,7 @@ const ImagesGrid = () => {
                     src={F4}
                     alt="Image 3"
                   />
-                  <h1>Listening</h1>
+                  <h1 className='ml-2'>Listening</h1>
                 </div>
 
                 <div>
@@ -47,7 +47,7 @@ const ImagesGrid = () => {
                     src={F3}
                     alt="Image 4"
                   />
-                  <h1>Title 4</h1>
+                  <h1 className='ml-2'>Student News </h1>
                 </div>
 
                 <div>
@@ -56,7 +56,7 @@ const ImagesGrid = () => {
                     src={F5}
                     alt="Image 5"
                   />
-                  <h1>Title 5</h1>
+                  <h1 className='ml-2'>Vocabulary</h1>
                 </div>
 
                 <div>
@@ -65,7 +65,7 @@ const ImagesGrid = () => {
                     src={F7}
                     alt="Image 6"
                   />
-                  <h1>Title 6</h1>
+                  <h1 className='ml-2'>Book IELTS Exam</h1>
                 </div>
 
                 <div>
@@ -74,7 +74,7 @@ const ImagesGrid = () => {
                     src={F6}
                     alt="Image 7"
                   />
-                  <h1>Title 7</h1>
+                  <h1 className='ml-2'>Classes</h1>
                 </div>
 
                 <div>
@@ -83,18 +83,27 @@ const ImagesGrid = () => {
                     src={F8}
                     alt="Image 8"
                   />
-                  <h1>Title 8</h1>
+                  <h1 className='ml-2'>Reading</h1>
                 </div>
               </div>
               <div>
-              <div className='  bg-white h-12 w-44 p-2 shadow-md rounded-lg mt-20 ml-12'>
-                App Guide Video
+              <div className='bg-white text-sm text-gray-700 h-12 w-60 p-2 px-4 shadow-md rounded-lg mt-4 ml-12 flex gap-2 mb-4'>
+                <img 
+                  src="src/assets/drive/yt.png" 
+                  alt="yt" 
+                  className="w-6 h-6 mt-[2px] ml-8"
+                />
+                <p className='mt-[2px]'>App Guide Video</p>
               </div>
-              <div className='bg-white h-36 w-44 p-2 shadow-md rounded-lg mt-2  ml-12'>
-      <div className="">   <h1 className='font-bold'>Practice mock tests</h1>
-<p className='text-xs'>         Get the authentic IELTS experience with all four modules covered
-</p>         </div>
-         <button className='rounded-xl bg-blue-500 w-full   '>Start</button>
+
+              <div className='bg-white h-36 w-60 p-4 py-[24px] px-4 shadow-md rounded-lg mt-2 ml-12 grid gap-2'>
+                
+              <div className='grid ml-[12px]'>
+                <h1 className='font-bold mb-2'>Practice mock tests</h1>
+                <p className='text-xs mb-4'>Get the authentic IELTS experience with all four modules covered</p>         
+                
+                <button className='rounded-2xl bg-blue-600 w-44 text-white'>Start</button>
+              </div>
               </div>
               </div>
 
