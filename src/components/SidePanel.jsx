@@ -1,6 +1,14 @@
 import React from "react";
 import Frame1 from "../assets/Frame1.png";
 import Frame2 from "../assets/Frame2.png";
+import stories from '../assets/drive/stories.png'
+import Users from '../assets/drive/Users.png'
+import shop from '../assets/drive/shop.png'
+import feedback from '../assets/drive/feedback.png'
+import home from '../assets/drive/home.png'
+import graph from '../assets/drive/graph.png'
+import buy from '../assets/drive/buy.png'
+import logout from '../assets/drive/logout.png'
 
 import ImagesGrid from "./ImagesGrid";
 
@@ -19,7 +27,7 @@ const SidePanel = () => {
               <ul className="text-left">
                 <li className="my-4 mx-auto cursor-pointer hover:bg-blue-400 px-12 py-[4px] rounded-md flex">
                   <img 
-                      src="src/assets/drive/home.png" 
+                      src={home} 
                       alt="home" 
                       className="w-6 h-6 mr-2"
                   /> 
@@ -27,7 +35,7 @@ const SidePanel = () => {
                 </li>
                 <li className="my-4 mx-auto cursor-pointer hover:bg-blue-400 px-12 py-[4px] rounded-md flex">
                   <img 
-                      src="src/assets/drive/Users.png" 
+                      src={Users}
                       alt="users" 
                       className="w-6 h-6 mr-2"
                   /> 
@@ -35,7 +43,7 @@ const SidePanel = () => {
                 </li>
                 <li className="my-4 mx-auto cursor-pointer hover:bg-blue-400 px-12 py-[4px] rounded-md flex">
                   <img 
-                      src="src/assets/drive/stories.png" 
+                      src={stories}
                       alt="users" 
                       className="w-6 h-6 mr-2"
                   /> 
@@ -43,7 +51,7 @@ const SidePanel = () => {
                 </li>
                 <li className="my-4 mx-auto cursor-pointer hover:bg-blue-400 px-12 py-[4px] rounded-md flex">
                   <img 
-                      src="src/assets/drive/shop.png" 
+                    src={shop} 
                       alt="users" 
                       className="w-6 h-6 mr-2"
                   /> 
@@ -51,7 +59,7 @@ const SidePanel = () => {
                 </li>
                 <li className="my-4 mx-auto cursor-pointer hover:bg-blue-400 px-12 py-[4px] rounded-md flex">
                   <img 
-                      src="src/assets/drive/feedback.png" 
+                      src={feedback} 
                       alt="users" 
                       className="w-6 h-6 mr-2"
                   /> 
@@ -74,14 +82,14 @@ const SidePanel = () => {
                 <button className="bg-blue-500 w-1/2 ml-20 -mt-2 rounded-l-full absolute py-1 px-2 text-white flex gap-1">
                   
                   Buy Now
-                  <img src="src/assets/drive/buy.png" alt="buy" className="h-[20px] w-[20px]"/>
+                  <img src={buy} alt="buy" className="h-[20px] w-[20px]"/>
                 </button>
                </div>
                 
               </div>
             </div>
             <div className="mt-5 text-center flex gap-2 ml-12">
-              <img src="src/assets/drive/logout.png" alt="logout" className="h-4 w-4 mt-[6px]"/>
+              <img src={logout} alt="logout" className="h-4 w-4 mt-[6px]"/>
               Logout</div>
           </div>
         </div>
@@ -93,7 +101,7 @@ const SidePanel = () => {
           <div className="bg-gray-100 h-full w-full">
             <div className="text-md p-4 px-16 text-lg font-medium ">Your Progress Summary</div>
             <div className="flex gap-8 px-16 relative">
-              <img src="src/assets/drive/graph.png" alt="graph" className="h-60 w-[620px] rounded-xl"/>
+              <img src={graph} alt="graph" className="h-60 w-[620px] rounded-xl"/>
 
               <img src={Frame2} className="h-60 w-[280px]"/>
               <div className="absolute ml-[710px] mt-24">

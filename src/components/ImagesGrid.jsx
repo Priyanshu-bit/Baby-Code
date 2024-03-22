@@ -7,6 +7,11 @@ import F5 from "../assets/drive/F5.png";
 import F6 from "../assets/drive/F6.png";
 import F7 from "../assets/drive/F7.png";
 import F8 from "../assets/drive/F8.png";
+import yt from "../assets/drive/yt.png";
+
+
+
+
 
 const ImagesGrid = () => {
   return (
@@ -89,7 +94,7 @@ const ImagesGrid = () => {
               <div>
               <div className='bg-white text-sm text-gray-700 h-12 w-60 p-2 px-4 shadow-md rounded-lg mt-4 ml-12 flex gap-2 mb-4'>
                 <img 
-                  src="src/assets/drive/yt.png" 
+                  src={yt} 
                   alt="yt" 
                   className="w-6 h-6 mt-[2px] ml-8"
                 />
